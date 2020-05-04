@@ -45,7 +45,7 @@ class Contacts(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(20), nullable=False)
     phone_num = db.Column(db.String(20), nullable=False)
-    msg = db.Column(db.String(240), nullable=False)
+    msg = db.Column(db.String(400), nullable=False)
     date = db.Column(db.String(40), nullable=True)
     email = db.Column(db.String(25), nullable=False)
 
@@ -63,10 +63,10 @@ class Posts(db.Model):
     '''
     __tablename__ = 'posts'
     sno = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(80), nullable=False)
-    slug = db.Column(db.String(17), nullable=False)
-    tagline = db.Column(db.String(20), nullable=False)
-    content = db.Column(db.String(200), nullable=False)
+    title = db.Column(db.String(100), nullable=False)
+    slug = db.Column(db.String(25), nullable=False)
+    tagline = db.Column(db.String(200), nullable=False)
+    content = db.Column(db.String(2000), nullable=False)
     date = db.Column(db.String(40), nullable=True)
     img_file = db.Column(db.String(25), nullable=False)
 
