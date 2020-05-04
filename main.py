@@ -121,7 +121,7 @@ def edit(sno):
      if('user' in session and session['user'] == params['admin_user']):
         if request.method=='POST':
             box_title = request.form.get('title')
-            tline = request.form.get('tline')
+            tline = request.form.get('tagline')
             slug = request.form.get('slug')
             content = request.form.get('content')
             date = datetime.now()
