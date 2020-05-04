@@ -3,7 +3,7 @@
     {
         "local_server":"True" ,
         "local_uri":"mysql://root:@localhost/coding",
-        "prod_uri" : "postgres://oyihiiqozzueyn:a9a7a9e862665e3d5ef99854bedee3c292f7987eb45bb17a2e433673329e218f@ec2-54-165-36-134.compute-1.amazonaws.com:5432/d4jfddk85m8s5f",
+        "prod_uri" : "postgres://nvbuhpjluneqmy:65e805ec8ecc452349f9c98321ba8938584618bb971319ee3fd3ffab8a0e124d@ec2-54-165-36-134.compute-1.amazonaws.com:5432/d2lc6c93qfag9n",
         "fb_url" : "https://facebook.com/mr_nobody" ,
         "twitter_url" : "https://twitter.com/mr_nobody" ,
         "github_url" : "https://github.com/mr_nobody" ,
