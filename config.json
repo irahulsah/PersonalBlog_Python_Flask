@@ -1,0 +1,27 @@
+{ 
+    "params":
+    {
+        "local_server":"True" ,
+        "local_uri":"mysql://root:@localhost/coding",
+        "prod_uri" : "postgres://oyihiiqozzueyn:a9a7a9e862665e3d5ef99854bedee3c292f7987eb45bb17a2e433673329e218f@ec2-54-165-36-134.compute-1.amazonaws.com:5432/d4jfddk85m8s5f",
+        "fb_url" : "https://facebook.com/mr_nobody" ,
+        "twitter_url" : "https://twitter.com/mr_nobody" ,
+        "github_url" : "https://github.com/mr_nobody" ,
+        "blog_name" : "Mr-Nobody" ,
+        "blog_subname" : "What we think, we Become" ,
+        "blog_tagline" : "A Blog Developed By mr-nobody" ,
+        "g_username" : "email@gmail.com" ,
+        "g_password" : " pass "  ,
+        "about_text" : "Talk is cheap. Show me the code--> Neither is a violin, or a typewriter,easy  until you learn how to use it.A language that doesn't affect the way you think about programming is not worth knowing. Good programmers write code that humans can understand when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create." ,
+        "no_of_post" : 3 ,
+        "login_img" : "login.svg"  ,
+        "admin_user" : "rahul" ,
+        "admin_pass" : "fuckmyassoff" ,
+        "upload_location" :"C:\\flask\\static\\img"
+
+    }
+
+
+
+
+}
