@@ -17,14 +17,14 @@ app = Flask(__name__)
 app.secret_key = 'nobody-get-key'
 app.config['UPLOAD_FOLDER'] = params['upload_location']
 
-app.config.update(
-    MAIL_SERVER = 'smtp.gmail.com' ,
-    MAIL_PORT = '465' ,
-    MAIL_USE_SSL = True ,
-    MAIL_USERNAME = params['g_username'] ,
-    MAIL_PASSWORD = params['g_password']
-)
-mail = Mail(app)
+# app.config.update(
+#     MAIL_SERVER = 'smtp.gmail.com' ,
+#     MAIL_PORT = '465' ,
+#     MAIL_USE_SSL = True ,
+#     MAIL_USERNAME = params['g_username'] ,
+#     MAIL_PASSWORD = params['g_password']
+# )
+# mail = Mail(app)
 
 ENV = 'prod'
 
@@ -187,11 +187,11 @@ def contact():
         entry = Contacts(name=name, phone_num = phone, msg = message, date= datetime.now(),email = email )
         db.session.add(entry)
         db.session.commit()
-        mail.send_message('New Message from ' + name ,
-                           sender=email,
-                           recipients = [params['g_username']],
-                           body = message + "\n" + phone 
-                         )
+        # mail.send_message('New Message from ' + name ,
+        #                    sender=email,
+        #                    recipients = [params['g_username']],
+        #                    body = message + "\n" + phone 
+        #                  )
     return render_template('contact.html',params=params)
 if __name__ == '__main__':
 
