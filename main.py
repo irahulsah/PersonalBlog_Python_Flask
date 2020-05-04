@@ -11,7 +11,6 @@ from datetime import datetime
 with open('config.json','r') as c:
     params = json.load(c)["params"]
 
-local_server = True
 
 app = Flask(__name__)
 app.secret_key = 'nobody-get-key'
@@ -50,7 +49,7 @@ class Contacts(db.Model):
     date = db.Column(db.String(40), nullable=True)
     email = db.Column(db.String(25), nullable=False)
 
-    def __init__(self, name, phone_num, mstitle):
+    def __init__(self, name, phone_num, msg, email):
         self.name = name
         self.phone_num = phone_num
         self.msg = msg
@@ -70,7 +69,7 @@ class Posts(db.Model):
     date = db.Column(db.String(40), nullable=True)
     img_file = db.Column(db.String(25), nullable=False)
 
-    def __init__(self, title, slug, tagline, content,img_file):
+    def __init__(self, title, slug, tagline, content ,img_file):
         self.title = title
         self.slug = slug
         self.tagline = tagline
