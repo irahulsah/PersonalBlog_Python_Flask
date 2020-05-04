@@ -193,4 +193,6 @@ def contact():
                            body = message + "\n" + phone 
                          )
     return render_template('contact.html',params=params)
-app.run(debug=True)
+if __name__ == '__main__':
+
+    app.run()
